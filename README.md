@@ -1,6 +1,6 @@
 # Classification of CALTECH-256
 
-This repository contains the code for Classification of CALTECH-256 based on DenseNet, ResNet. Moreover, we used transfer learning to imporve the performance of the model. 
+This repository contains the code for Classification of CALTECH-256 based on DenseNet, ResNet. Moreover, I used transfer learning to imporve the performance of the model. 
 
 # Implementation Detail
 
