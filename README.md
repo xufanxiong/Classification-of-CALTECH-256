@@ -1,4 +1,4 @@
-# ECE-285-Project 
+# Classification of CALTECH-256
 
 This repository contains the code for Classification of CALTECH-256 based on DenseNet, ResNet. Moreover, we used transfer learning to imporve the performance of the model. 
 
@@ -95,13 +95,17 @@ Figure 2: A deep DenseNet with three dense blocks.
 * The results of the first 4 models were obtained after 30 epochs. And the last 4 models were obtained after 15 epochs. Others were obtained after 30 epochs.
 * The pretrained dataset of transfer learning is ImageNet.
 
-![densenet.png](/images/demo.png) 
+<div align=center><img width="500" height="395" src="/images/acc.png"/></div>
 
-Figure 3: A demonstration of images prediction. 
+Figure 3: The histogram of per classes accuracies.
 
-![densenet.png](/images/Transfer-Resize.png) 
+![demo](/images/demo.png)
 
-Figure 4: The relationship between loss, accuracy and epochs based on transfer learning. (The images were resized to 221x221)
+Figure 4: A demonstration of images prediction. 
+
+<div align=center><img width="600" height="780" src="/images/Transfer-Resize.png"/></div>
+
+Figure 5: The relationship between loss, accuracy and epochs based on transfer learning. (The images were resized to 221x221)
 
 # References
 [1] [Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q.Weinberger. Densely Connected Convolutional Networks. cs.CV, 28 Jan2018](https://arxiv.org/pdf/1608.06993.pdf)
