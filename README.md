@@ -2,16 +2,15 @@
 
 This repository contains the code for Classification of CALTECH-256 based on DenseNet, ResNet. Moreover, we used transfer learning to imporve the performance of the model. 
 
-
 # Introduction
 
 In this project, we are using Caltech 256 as our data set to implement the object classification based on Convolution neural network. This data set includes 256 categories, and each category includes at least 80 labeled images. To achieve our goal, we find the new classification model Resnet and Densenet performs very well, when the layer goes deeper and deeper, by introducing the Residual. We try to train the model from the beginning, but the performances of the models were bad. Hence, to improve the model, transfer learning, pretrained by ImageNet, was introduced to develop out model. Because of it, the performances of our models were much better.
 
-<img src="https://cloud.githubusercontent.com/assets/8370623/17981494/f838717a-6ad1-11e6-9391-f0906c80bc1d.jpg" width="480">
+<div align=center><img width="480" src="/images/denseblock.jpg"/></div>
 
 Figure 1: A dense block with 5 layers and growth rate 4. 
 
-![densenet](https://cloud.githubusercontent.com/assets/8370623/17981496/fa648b32-6ad1-11e6-9625-02fdd72fdcd3.jpg)
+<div align=center><img src="/images/densenet_demo.jpg"/></div>
 
 Figure 2: A deep DenseNet with three dense blocks. 
 
@@ -32,6 +31,8 @@ Figure 2: A deep DenseNet with three dense blocks.
 * Demonstation.ipynb: The demonstraion code based on demo_set images. (Since the model files and the image set are too large to upload, the demonstraion can't run based on these code. It must use 'hdf5' model files when you want to try the demonstration code.)
 
 * Compute per class accuracies.ipynb: This notebook aim to compute the accuracies of every classes.
+
+* acc-num.ipynb: This notebook aim to draw the relationship between accuracy and number of images per classes.
 
 * ### Preprocessing:
   Center Crop.ipynb: Aim to center crop all the images and resize the images to 224x224.
@@ -99,13 +100,17 @@ Figure 2: A deep DenseNet with three dense blocks.
 
 Figure 3: The histogram of per classes accuracies.
 
+<div align=center><img width="500" src="/images/acc-num.png"/></div>
+
+Figure 4: Relationship between accuracy and number of images per classes.
+
 ![demo](/images/demo.png)
 
-Figure 4: A demonstration of images prediction. 
+Figure 5: A demonstration of images prediction. 
 
 <div align=center><img width="600" height="780" src="/images/Transfer-Resize.png"/></div>
 
-Figure 5: The relationship between loss, accuracy and epochs based on transfer learning. (The images were resized to 221x221)
+Figure 6: The relationship between loss, accuracy and epochs based on transfer learning. (The images were resized to 221x221)
 
 # References
 [1] [Gao Huang, Zhuang Liu, Laurens van der Maaten, and Kilian Q.Weinberger. Densely Connected Convolutional Networks. cs.CV, 28 Jan2018](https://arxiv.org/pdf/1608.06993.pdf)
